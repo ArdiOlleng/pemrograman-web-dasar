@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pembayaran</title>
+</head>
+<body>
+    <h2>Formulir Pembayaran</h2>
+    <form action="/proses_pembayaran" method="post">
+        <div>
+            <label for="nama_di_kartu">Nama di Kartu:</label>
+            <input type="text" id="nama_di_kartu" name="nama_di_kartu" required>
+        </div>
+        <div>
+            <label for="nomor_kartu">Nomor Kartu:</label>
+            <input type="text" id="nomor_kartu" name="nomor_kartu" required>
+        </div>
+        <div>
+            <label for="data_berakhir">Data Berakhir:</label>
+            <input type="text" id="data_berakhir" name="data_berakhir" placeholder="MM/YY" required>
+        </div>
+        <div>
+            <label for="kode_keamanan">Kode Keamanan:</label>
+            <input type="text" id="kode_keamanan" name="kode_keamanan" required>
+        </div>
+        <div>
+            <label for="bayar">Bayar (Rp):</label>
+            <input type="text" id="bayar" name="bayar" value="300000" readonly>
+        </div>
+        <div>
+            <input type="submit" value="Bayar">
+        </div>
+    </form>
+</body>
+</html>
